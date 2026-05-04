@@ -121,7 +121,7 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 
 # บทที่ 1: การเข้าใช้งานระบบ (Login)
 
-การเข้าสู่ระบบเป็นขั้นตอนสำหรับร้านค้าที่มีบัญชีผู้ใช้งานอยู่แล้วในระบบ TOKO Merchant เพื่อเข้าถึงแผงควบคุมและบริหารจัดการธุรกิจ
+การเข้าสู่ระบบเป็นขั้นตอนสำหรับร้านค้าที่มีบัญชีผู้ใช้งานอยู่แล้วในระบบ TOKO Shop เพื่อเข้าถึงแผงควบคุมและบริหารจัดการธุรกิจ
 
 <!-- วิธีใส่รูป: นำไฟล์รูปไปวางใน images/ แล้วใช้ syntax ด้านล่าง (ลบ comment ออกได้)
 ![หน้าจอเข้าสู่ระบบ TOKO Merchant](images/ch01_login_screen.png){width=60%}
@@ -160,9 +160,11 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 \bottomrule
 \end{tabular}
 
-\begin{center}
-\textit{[Fig 1: หน้าจอเข้าระบบ]}
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{images/image1.png}
+\caption{หน้าจอเข้าระบบ}
+\end{figure}
 
 \newpage
 
@@ -188,9 +190,11 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 \end{itemize}
 \end{warnbox}
 
-\begin{center}
-\textit{[Fig 2: หน้าจอลงทะเบียน]}
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{images/image2.png}
+\caption{หน้าจอลงทะเบียน}
+\end{figure}
 
 ## 2.2 การยืนยันตัวตนผ่านอีเมล (Email OTP)
 
@@ -205,9 +209,18 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 หากไม่พบอีเมล กรุณาตรวจสอบ Spam / Junk Folder ก่อนเสมอ
 \end{tipbox}
 
-\begin{center}
-\textit{[Fig 3: ตัวอย่างอีเมล OTP] · [Fig 4: หน้าจอกรอก OTP]}
-\end{center}
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.45\textwidth}\centering
+\includegraphics[width=\linewidth]{images/image3.jpg}\\
+\small ตัวอย่างอีเมล OTP
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}\centering
+\includegraphics[width=\linewidth]{images/image4.jpg}\\
+\small หน้าจอกรอก OTP
+\end{minipage}
+\caption{การยืนยันตัวตนผ่านอีเมล (OTP)}
+\end{figure}
 
 ## 2.3 การตั้งรหัส PIN และการจัดการความปลอดภัย
 
@@ -303,9 +316,18 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 \textbf{หมายเหตุ:} หากยังไม่มีร้านในระบบ หน้าหลักจะแสดงข้อความ "คุณยังไม่มีร้าน โปรดลงชื่อเข้าใช้โดยเข้าเป็นผู้ดูแลระบบและเปิดร้านใหม่" พร้อมปุ่ม "เพิ่มร้านค้า" สีส้มที่มุมขวาล่าง
 \end{notebox}
 
-\begin{center}
-\textit{[Fig 6: หน้าหลัก (Home Screen)] · [Fig 7: หน้าหลักกรณีที่ยังไม่สร้างร้าน]}
-\end{center}
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.45\textwidth}\centering
+\includegraphics[width=\linewidth]{images/image5.jpg}\\
+\small หน้าหลัก (Home Screen)
+\end{minipage}\hfill
+\begin{minipage}{0.45\textwidth}\centering
+\includegraphics[width=\linewidth]{images/image6.jpg}\\
+\small กรณีที่ยังไม่สร้างร้าน
+\end{minipage}
+\caption{หน้าหลักของระบบ}
+\end{figure}
 
 \newpage
 
@@ -378,9 +400,22 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 
 หลังจากที่ท่านเข้าสู่ระบบและยืนยันตัวตนเรียบร้อยแล้ว หากท่านยังไม่มีหน้าร้านในระบบ หน้าจอหลักจะแสดงพื้นที่ว่างเพื่อให้ท่านเริ่มต้นสร้างธุรกิจ โดยมีจุดสังเกตหลักคือ **"ปุ่มเพิ่มร้านค้าสีส้ม"** ที่มุมขวาล่าง
 
-\begin{center}
-\textit{[Fig 8: หน้าจอร้านของฉัน] · [Fig 9-10: การเลือกประเภทร้าน]}
-\end{center}
+\begin{figure}[h]
+\centering
+\begin{minipage}{0.31\textwidth}\centering
+\includegraphics[width=\linewidth]{images/image7.jpg}\\
+\small หน้าจอร้านของฉัน
+\end{minipage}\hfill
+\begin{minipage}{0.31\textwidth}\centering
+\includegraphics[width=\linewidth]{images/image8.jpg}\\
+\small เลือกประเภทร้าน (1)
+\end{minipage}\hfill
+\begin{minipage}{0.31\textwidth}\centering
+\includegraphics[width=\linewidth]{images/image9.jpg}\\
+\small เลือกประเภทร้าน (2)
+\end{minipage}
+\caption{เริ่มต้นสร้างร้านค้า}
+\end{figure}
 
 ## 6.1 ขั้นตอนการสร้างร้านค้าสำหรับธุรกิจบริการรับส่ง (ประเภทที่ 3)
 
@@ -447,9 +482,19 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 
 - **เวลาเปิด-ปิด:** ระบบจะใช้ข้อมูลนี้เปิด/ปิดการรับคำสั่งซื้ออัตโนมัติ
 
-\begin{center}
-\textit{[Fig 11-19: ขั้นตอนเพิ่มร้านใหม่ทุกหน้าจอ]}
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.31\textwidth]{images/image10.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image11.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image12.jpg}\\[0.3cm]
+\includegraphics[width=0.31\textwidth]{images/image13.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image14.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image15.jpg}\\[0.3cm]
+\includegraphics[width=0.31\textwidth]{images/image16.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image17.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image18.jpg}
+\caption{ขั้นตอนเพิ่มร้านใหม่ทุกหน้าจอ (Fig 11--19)}
+\end{figure}
 
 ## 7.3 ขั้นตอนการลงทะเบียนธุรกิจประเภท 1, 2, 4, 5, 6
 
@@ -491,9 +536,16 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 \end{enumerate}
 \end{warnbox}
 
-\begin{center}
-\textit{[Fig 20-25: ขั้นตอนลงทะเบียน Delivery Service ทั้ง 6 ขั้น]}
-\end{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.31\textwidth]{images/image19.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image20.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image21.jpg}\\[0.3cm]
+\includegraphics[width=0.31\textwidth]{images/image22.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image23.jpg}\hfill
+\includegraphics[width=0.31\textwidth]{images/image24.jpg}
+\caption{ขั้นตอนลงทะเบียน Delivery Service ทั้ง 6 ขั้น (Fig 20--25)}
+\end{figure}
 
 \newpage
 
@@ -517,15 +569,62 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 - การกำหนดที่อยู่และข้อมูลการติดต่อ
 - การจัดการร้าน (Store Management)
 
-\begin{center}
-\textit{[Fig 26-28: หน้าจัดการข้อมูลร้าน]}
-\end{center}
 
+\begin{figure}[H]
+\centering
+\setlength{\tabcolsep}{0pt}
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image27.jpg}\\
+\small องค์ประกอบ (1)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image28.jpg}\\
+\small องค์ประกอบ (2)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image29.jpg}\\
+\small องค์ประกอบ (3)
+\end{minipage}
+\caption{หน้าจัดการข้อมูลร้าน (Fig 27--29)}
+\end{figure}
+
+
+\newpage
 ## 8.2 การจัดการร้าน (Store Management)
 
 หน้าจอ **การจัดการร้าน** เป็นศูนย์กลางสำหรับผู้ดูแลร้านในการบริหารจัดการข้อมูลที่เกี่ยวข้องกับร้านค้าและการให้บริการ ออกแบบในรูปแบบ **เมนูการ์ด (Card Menu)** เพื่อความสะดวก
 
-### 8.2.1 การจัดการสินค้า (Product Management)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.45\textwidth,height=0.42\textheight,keepaspectratio]{images/image30.jpg}
+\caption{หน้าจอการจัดการร้าน}
+\end{figure}
+
+\newpage
+### 8.2.1 การจัดการหมวดสินค้า (Product Category)
+
+จัดหมวดหมู่ของสินค้า เช่น อาหารจานหลัก / เครื่องดื่ม / ของหวาน / เมนูแนะนำ
+
+\begin{figure}[H]
+\centering
+\setlength{\tabcolsep}{0pt}
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image31.jpg}\\
+\small หมวดสินค้า (1)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image32.jpg}\\
+\small หมวดสินค้า (2)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image33.jpg}\\
+\small หมวดสินค้า (3)
+\end{minipage}
+\caption{การจัดการหมวดสินค้า (Fig 31--33)}
+\end{figure}
+
+\newpage
+### 8.2.2 การจัดการสินค้า (Product Management)
 
 ใช้สำหรับเพิ่ม แก้ไข หรือลบรายการสินค้า ผู้ดูแลร้านสามารถกำหนด:
 
@@ -534,12 +633,34 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 - หมวดหมู่สินค้า
 - จำนวนต่อแพ็ก
 - สถานะ: สินค้าแนะนำ / นำไว้ส่งได้ / สินค้าหมด
+  
 
-\begin{center}
-\textit{[Fig 29-32: หน้ารายการ/สร้าง/จัดการสินค้า]}
-\end{center}
+\begin{figure}[H]
+\centering
+\setlength{\tabcolsep}{0pt}
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image34.jpg}\\
+\small การจัดการสินค้า (1)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image35.jpg}\\
+\small การจัดการสินค้า (2)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image36.jpg}\\
+\small การจัดการสินค้า (3)
+\end{minipage}
+\caption{การจัดการหมวดสินค้า (Fig 34--36)}
+\end{figure}
 
-### 8.2.2 รายงานสต็อกวัตถุดิบ (Inventory Report)
+
+
+\begin{notebox}
+\textbf{หน้ารายการ/สร้าง/จัดการสินค้า (Fig 29--32):} ภาพประกอบจะอัปเดตในเวอร์ชันถัดไป
+\end{notebox}
+
+\newpage
+### 8.2.3 รายงานสต็อกวัตถุดิบ (Inventory Report)
 
 ตรวจสอบปริมาณวัตถุดิบในคลัง:
 
@@ -547,27 +668,64 @@ TOKO Admin Console & ระบบหลังบ้านสำหรับผ�
 - รายการวัตถุดิบที่ใช้ในการผลิตสินค้า
 - รายงานการใช้วัตถุดิบ
 
-### 8.2.3 การจัดการหมวดสินค้า (Product Category)
+\begin{figure}[H]
+\centering
+\setlength{\tabcolsep}{0pt}
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image37.png}\\
+\small การจัดการวัตถุดิบ (1)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image38.png}\\
+\small การจัดการวัตถุดิบ (2)
+\end{minipage}%
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image39.png}\\
+\small การจัดการวัตถุดิบ (3)
+\end{minipage}
+\caption{การจัดการวัตถุดิบ (Fig 37--39)}
+\end{figure}
 
-จัดหมวดหมู่ของสินค้า เช่น อาหารจานหลัก / เครื่องดื่ม / ของหวาน / เมนูแนะนำ
+\newpage
 
+\begin{figure}[H]
+\centering
+\setlength{\tabcolsep}{0pt}
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image40.png}\\
+\small การจัดการวัตถุดิบ (4)
+\end{minipage}
+\begin{minipage}{0.33\textwidth}\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{images/image41.png}\\
+\small การจัดการวัตถุดิบ (5)
+\end{minipage}
+\caption{การจัดการวัตถุดิบ (Fig 40--41)}
+\end{figure}
+
+
+
+\newpage
 ### 8.2.4 การจัดการออปชั่น (Option Management)
 
 ตัวเลือกเพิ่มเติม เช่น ระดับความเผ็ด / ขนาดอาหาร / ท็อปปิ้ง / เครื่องเคียง
 
+\newpage
 ### 8.2.5 การจัดการหมวดออปชั่น (Option Category)
 
 จัดกลุ่มออปชั่น เช่น ระดับความเผ็ด / เครื่องดื่ม / ซอส
 
+\newpage
 ### 8.2.6 การจัดการพนักงาน (Staff Management)
 
 เพิ่มพนักงาน เช่น พนักงานครัว / เสิร์ฟ / ผู้จัดการร้าน
 กำหนด: ชื่อ / บทบาทหน้าที่ / สิทธิ์การใช้งานระบบ (Role-based)
 
+\newpage
 ### 8.2.7 การจัดการโซนโต๊ะ (Table Zone)
 
 กำหนดพื้นที่ภายในร้าน: โซนในร้าน / ด้านนอก / VIP / ริมทะเล
 
+\newpage
 ### 8.2.8 การจัดการโต๊ะและห้องพัก (Table \& Room)
 
 กำหนด: หมายเลขโต๊ะ / จำนวนที่นั่ง / ประเภทโต๊ะ / สถานะการใช้งาน
