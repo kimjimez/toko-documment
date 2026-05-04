@@ -1,0 +1,43 @@
+{
+  "pasteImage.path": "${projectRoot}/images",
+  "pasteImage.basePath": "${projectRoot}",
+  "pasteImage.forceUnixStyleSeparator": true,
+  "pasteImage.prefix": "./",
+  "pasteImage.namePrefix": "img_",
+  "pasteImage.defaultName": "Y-MM-DD-HH-mm-ss",
+  "pasteImage.insertPattern": "![${imageFileNameWithoutExt}](${imageFilePath}){width=70%}",
+
+  "markdown.preview.fontFamily": "Sukhumvit Set, -apple-system, BlinkMacSystemFont, sans-serif",
+  "markdown.preview.fontSize": 15,
+  "markdown.preview.lineHeight": 1.6,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.markEditorSelection": true,
+
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown-preview-enhanced.codeBlockTheme": "github.css",
+  "markdown-preview-enhanced.revealjsTheme": "white.css",
+  "markdown-preview-enhanced.mermaidTheme": "default",
+  "markdown-preview-enhanced.enableScriptExecution": true,
+  "markdown-preview-enhanced.breakOnSingleNewLine": false,
+
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.formatOnSave": false
+  },
+
+  "markdownlint.config": {
+    "MD013": false,
+    "MD033": false,
+    "MD041": false
+  },
+
+  "files.associations": {
+    "*.md": "markdown"
+  }
+}

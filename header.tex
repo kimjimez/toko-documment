@@ -1,0 +1,21 @@
+\usepackage{fontspec}
+\setmainfont{Sukhumvit Set}
+\setsansfont{Sukhumvit Set}
+\setmonofont{Menlo}
+\usepackage{xcolor}
+\definecolor{tokogreen}{RGB}{38,166,91}
+\definecolor{tokodark}{RGB}{25,82,53}
+\definecolor{tokolight}{RGB}{232,247,238}
+\definecolor{tokoaccent}{RGB}{255,107,53}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{midgray}{RGB}{120,120,120}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+% Simple environments using quote
+\newenvironment{tipbox}{\par\medskip\noindent\hrule\smallskip\noindent\textbf{\color{tokogreen}เคล็ดลับ:}\quad}{\par\smallskip\hrule\medskip}
+\newenvironment{warnbox}{\par\medskip\noindent\hrule\smallskip\noindent\textbf{\color{tokoaccent}ข้อควรระวัง:}\quad}{\par\smallskip\hrule\medskip}
+\newenvironment{notebox}{\par\medskip\noindent\hrule\smallskip\noindent\textbf{\color{midgray}หมายเหตุ:}\quad}{\par\smallskip\hrule\medskip}
+% No-op for tcolorbox usage in titlepage (we will simplify in MD)

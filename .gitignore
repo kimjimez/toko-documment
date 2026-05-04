@@ -1,0 +1,4 @@
+.DS_Store
+*.log
+mermaid-filter.err
+images_recovered/
