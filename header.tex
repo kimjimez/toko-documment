@@ -1,7 +1,32 @@
 \usepackage{fontspec}
 \setmainfont{Sukhumvit Set}
 \setsansfont{Sukhumvit Set}
-\setmonofont{Menlo}
+\setmonofont{Menlo}[Scale=0.9]
+% Thai fallback for monospace (Menlo lacks Thai glyphs)
+\newfontfamily\thaimonofont{Sukhumvit Set}[Scale=0.9,
+  ItalicFont={Sukhumvit Set},
+  BoldFont={Sukhumvit Set Bold},
+  BoldItalicFont={Sukhumvit Set Bold}]
+\usepackage[Thai]{ucharclasses}
+\setTransitionTo{Thai}{\thaimonofont}
+\setTransitionFrom{Thai}{\normalfont}
+% Fallback font for symbols missing in Sukhumvit Set (e.g. arrows)
+\newfontfamily\symbolfallback{Menlo}
+\catcode`\→=\active \protected\def→{{\symbolfallback\char"2192}}
+\catcode`\←=\active \protected\def←{{\symbolfallback\char"2190}}
+\catcode`\↑=\active \protected\def↑{{\symbolfallback\char"2191}}
+\catcode`\↓=\active \protected\def↓{{\symbolfallback\char"2193}}
+\catcode`\⇒=\active \protected\def⇒{{\symbolfallback\char"21D2}}
+\catcode`\⇐=\active \protected\def⇐{{\symbolfallback\char"21D0}}
+% Disable italic for code comments so Thai comments don't get routed to Menlo Italic (no Thai glyphs)
+\AtBeginDocument{%
+  \ifcsname CommentTok\endcsname
+    \protected\def\CommentTok#1{\textcolor[rgb]{0.40,0.45,0.13}{#1}}%
+  \fi
+  \ifcsname DocumentationTok\endcsname
+    \protected\def\DocumentationTok#1{\textcolor[rgb]{0.40,0.45,0.13}{#1}}%
+  \fi
+}
 \usepackage{xcolor}
 \definecolor{tokogreen}{RGB}{38,166,91}
 \definecolor{tokodark}{RGB}{25,82,53}
@@ -13,6 +38,8 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{float}
+\usepackage{pdflscape}
+\usepackage{graphicx}
 \setlength{\parskip}{6pt}
 \setlength{\parindent}{0pt}
 % Simple environments using quote
