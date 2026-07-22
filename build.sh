@@ -33,10 +33,12 @@ case "$DOC" in
   shop)   build_doc "TOKO_Shop_Manual.md"           "TOKO_Shop_Manual" ;;
   ops)    build_doc "TOKO_Operation_Manual.md"      "TOKO_Operation_Manual" ;;
   notif)  build_doc "TOKO_Notification_Resend_Operation.md" "TOKO_Notification_Resend_Operation" ;;
+  staff)  build_doc "TOKO_Staff_Management_Manual.md" "TOKO_Staff_Management_Manual" ;;
   both|all-docs)
         build_doc "TOKO_Shop_Manual.md"          "TOKO_Shop_Manual"
-        build_doc "TOKO_Operation_Manual.md"     "TOKO_Operation_Manual" ;;
-  *)    echo "Usage: $0 [shop|ops|notif|both]"; exit 1 ;;
+        build_doc "TOKO_Operation_Manual.md"     "TOKO_Operation_Manual"
+        build_doc "TOKO_Staff_Management_Manual.md" "TOKO_Staff_Management_Manual" ;;
+  *)    echo "Usage: $0 [shop|ops|notif|staff|both]"; exit 1 ;;
 esac
 
 echo "Done."
